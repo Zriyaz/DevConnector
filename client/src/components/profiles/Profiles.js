@@ -1,9 +1,9 @@
 import React, { Fragment, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Spinner from '../components/layout/Spinner';
-import { getProfiles } from '../actions/profile';
+import { getProfiles } from '../../actions/profile';
 import ProfileItem from './ProfileItem';
+import Spinner from '../layout/Spinner';
 
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {

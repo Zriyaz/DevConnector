@@ -1,0 +1,8 @@
+{
+    "mongoURI": "mongodb+srv://mern:mern123@cluster0.4v3pa.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "jwtSecret": "djfkg45kj6j56hbl546klujhzaxa46",
+    "githubClientId": "f4be145eaee051af245f",
+    "githubSecret": "d37e70a86660f9bed539143dfe0c02d057458a56",
+    "githubToken": "4a7eda121e3ef1c65f9aab348a9095cd54d4f1a5"
+  }
+  

@@ -12,6 +12,7 @@ const User = require('../../models/User');
 //@route POST      api/uses
 // @description   Register User
 // @access        Public
+//https://github.com/rahulgoyal21/mern.devConnector.app
 
 router.post(
   '/',
@@ -41,15 +42,13 @@ router.post(
           .json({ errors: [{ msg: 'User already exists' }] });
       }
 
-      // get users gravitar  grap the user existing email picture
-      const avatar = normalize(
-        gravatar.url(email, {
-          s: '200',
-          r: 'pg',
-          d: 'mm',
-        }),
-        { forceHttps: true }
-      );
+      // get users gravatar  grap the user existing email picture
+      //Get users gravatar
+      const avatar = gravatar.url(email, {
+        s: '200', //size
+        r: 'pg', //rating
+        d: 'mm', //default
+      });
 
       user = new User({ name, email, avatar, password }); // creating instance of user
 
